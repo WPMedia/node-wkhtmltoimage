@@ -47,7 +47,7 @@ function WKHtmlToImage() {
 		}
 
 		if (callback) {
-			child.on('exit', callback);
+			child.on('close', callback);
 		}
 
 		if (!isUrl) {
